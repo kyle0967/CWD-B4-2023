@@ -1,0 +1,18 @@
+
+
+
+
+
+h1, h2, h3 {
+    font-weight: 120;
+    color: #b71c1c;
+}
+
+p {
+    font-size: 20px;
+    font-weight: 350;
+}
+
+#demoTxt{
+    font-weight: 520;
+}

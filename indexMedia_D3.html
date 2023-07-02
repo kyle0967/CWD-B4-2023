@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Day 3</title>
+
+    <!-- link ng CSS-->
+    <link rel="stylesheet" href="styles.css">
+
+    <!--Font awesome-->
+    <script src="https://kit.fontawesome.com/23275c8ffe.js" crossorigin="anonymous"></script>
+
+    <!--cdnjs-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!--Material Icons-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+</head>
+<body class="light-grey lighten-5 deep-purple-text text-accent-1">
+
+    <div class="container">
+        <div class="row">
+            <div class="col s9">
+                <h2 class="text-flow">Material Box</h2>
+                <p class="grey-text text-darken-1 flow-text">Material box is a material design implementation of the Lightbox plugin. When a user clicks on an image that can be enlarged, Material box centers the image and enlarges it in a smooth, non-jarring manner. To dismiss the image, the user can either click on the image again, scroll away, or press the ESC key.</p>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col s12 m6"> 
+                <img class="responsive-img materialboxed" src="images/img1.jpg">
+            </div>
+            <div class="col s12 m6">
+                <img class="responsive-img materialboxed" src="images/img2.jpg">
+            </div>   
+        </div>
+
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col s9">
+                <h2 class="text-flow">Slider</h2>
+                <p class="grey-text text-darken-1 flow-text">Our slider is a simple and elegant image carousel. You can also have captions that will be transitioned on their own depending on their alignment. You can also have indicators that show up on the bottom of the slider.</p>
+            </div>
+        </div>
+
+        <div class="row">
+          <div class="col s12">
+            <div class="slider">
+              <ul class="slides">
+                <li>
+                  <img src="images/img1.jpg"> <!-- random image -->
+                  <div class="caption center-align">
+                    <h3>This is our big Tagline!</h3>
+                    <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+                  </div>
+                </li>
+                <li>
+                  <img src="images/img2.jpg"> <!-- random image -->
+                  <div class="caption left-align">
+                    <h3>Left Aligned Caption</h3>
+                    <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+                  </div>
+                </li>
+                <li>
+                  <img src="images/img3.jpg"> <!-- random image -->
+                  <div class="caption right-align">
+                    <h3>Right Aligned Caption</h3>
+                    <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+                  </div>
+                </li>
+                <li>
+                  <img src="images/img1.jpg"> <!-- random image -->
+                  <div class="caption center-align">
+                    <h3>This is our big Tagline!</h3>
+                    <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+    </div>
+
+
+    <div style="height: 1000px;"></div>
+    
+    <!--jQuery CDN-->
+    <script
+    src="https://code.jquery.com/jquery-3.7.0.js"
+    integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM="
+    crossorigin="anonymous"></script>
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <script> 
+      $(document).ready(function(){
+
+          //materialboxed  
+          $('.materialboxed').materialbox({
+            inDuration: 1000,
+            outDuration: 1000
+          });
+
+          //slider
+          $('.slider').slider({
+            indicators: false
+          });
+
+      });
+    </script>
+
+</body>
+</html>
